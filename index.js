@@ -1,7 +1,7 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-const votingAge = 3;
+var votingAge = 33;
 if (votingAge > 18) {
   console.log("true");
 }
@@ -130,7 +130,7 @@ function gradeCalculator(grade) {
     return console.log("F");
   }
 }
-console.log(gradeCalculator(83));
+gradeCalculator(83);
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
