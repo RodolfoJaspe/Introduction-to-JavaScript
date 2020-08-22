@@ -86,6 +86,17 @@ console.log(rockPaperScissors(Math.random()));
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
+function kmToMiles(KM) {
+  const Miles = KM / 1.60934;
+  return Miles + " Miles";
+}
+console.log(kmToMiles(10));
+
+function feetToCm(CM) {
+  const Feet = CM / 30.48;
+  return Feet + " Centimeters";
+}
+console.log(feetToCm(100));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
