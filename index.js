@@ -50,13 +50,21 @@ dogYearsAge(33);
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 function dogFeeder(age, weight) {
-  if (age >= 1 && weight <= 5) return weight * 0.05;
-  else if (weight >= 6 && weight <= 10) return weight * 0.04;
-  else if (weight >= 11 && weight <= 15) return weight * 0.03;
-  else if (weight > 15) return weight * 0.02;
-  else if (age >= 0.167 && age <= 0.33) return weight * 0.1;
-  else if (age >= 0.33 && age <= 0.583) return weight * 0.05;
-  else if (age >= 0.583 && age <= 1) return weight * 0.04;
+  if (age >= 1 && weight <= 5) {
+    return weight * 0.05;
+  } else if (weight >= 6 && weight <= 10) {
+    return weight * 0.04;
+  } else if (weight >= 11 && weight <= 15) {
+    return weight * 0.03;
+  } else if (weight > 15) {
+    return weight * 0.02;
+  } else if (age >= 0.167 && age <= 0.33) {
+    return weight * 0.1;
+  } else if (age >= 0.33 && age <= 0.583) {
+    return weight * 0.05;
+  } else if (age >= 0.583 && age <= 1) {
+    return weight * 0.04;
+  }
 }
 console.log(dogFeeder(1, 15));
 /************************************************************** Task 4 **************************************************************/
@@ -65,7 +73,14 @@ console.log(dogFeeder(1, 15));
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
-
+function rockPaperScissors(rock) {
+  if (rock >= 0 && rock <= 0.33) {
+    return "you won";
+  } else {
+    return "you lost";
+  }
+}
+console.log(rockPaperScissors(Math.random()));
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
